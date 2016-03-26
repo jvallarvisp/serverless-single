@@ -1,4 +1,5 @@
 #Serverless Single Plugin
+[![serverless](http://public.serverless.com/badges/v3.svg)](http://www.serverless.com)
 
 Removes unnecessary folders, or unused lambda functions in your zip file, thus reducing zip file size.
 
