@@ -103,6 +103,9 @@ module.exports = function(S) { // Always pass in the ServerlessPlugin Class
 
       return new BbPromise(function(resolve, reject) {
 
+        if(!_this.function.custom.single){
+          resolve( _this.evt);
+        }
         let includeFolder = _this.function.custom.single.include;
         var allowRemoveFolder = function(name) {
           var allow=true;
