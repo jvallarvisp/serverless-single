@@ -79,7 +79,7 @@ module.exports = function(S) { // Always pass in the ServerlessPlugin Class
       let func    = S.getProject().getFunction(evt.options.name),
           singlize;
 
-      if (func.getRuntime().getName().contains('nodejs')) {
+      if (func.getRuntime().getName().includes('nodejs')) {
         singlize = new SinglizeNodejs(S, evt, func);
         return singlize.singlize()
             .then(function(evt) {
